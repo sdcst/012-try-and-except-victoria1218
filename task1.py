@@ -9,5 +9,9 @@
 # or display an error message if they enter in something else.
 
 number = input("Please enter in an integer value")
-number = int(number)
-print(number)
+try:
+   number = int(number)
+   print(number)
+except:
+   print(f"{number} is not an integer value")
+
